@@ -30,11 +30,63 @@
 			<id>spigot-repo</id>
 			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
 		</repository>
+		<repository>
+			<id>incursio-repo</id>
+			<url>https://repo.incursio.net/</url>
+		</repository>
 	</repositories>
 	<dependencies>
 		<dependency>
+			<groupId>com.boydti.cbs</groupId>
+			<artifactId>commandblockserver-server</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.spigotmc</groupId>
+					<artifactId>spigot</artifactId>
+				</exclusion>
+				<exclusion>
+					<artifactId>craftbukkit_v1_8R3</artifactId>
+					<groupId>org.spigotmc</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spigot_v1_9R1</artifactId>
+					<groupId>org.spigotmc</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spigot_v1_9R2</artifactId>
+					<groupId>org.spigotmc</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spigot_v1_10R1</artifactId>
+					<groupId>org.spigotmc</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spigot_v1_11R1</artifactId>
+					<groupId>org.spigotmc</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spigot_v1_12R1</artifactId>
+					<groupId>org.spigotmc</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.intellectualcrafters</groupId>
+			<artifactId>PlotSquared</artifactId>
+			<version>3.5.1-SNAPSHOT</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>come.sk89q</groupId>
+					<artifactId>worldedit</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
 			<groupId>org.spigotmc</groupId>
-			<artifactId>spigot-api</artifactId>
+			<artifactId>spigot</artifactId>
 			<version>1.12-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>

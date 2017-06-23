@@ -76,46 +76,46 @@
             <scope>compile</scope>
         </dependency>
 		<dependency>
-			<artifactId>craftbukkit_v1_8R3</artifactId>
-			<groupId>org.bukkit</groupId>
+			<artifactId>spigot_v1_8R3</artifactId>
+			<groupId>org.spigotmc</groupId>
 			<version>v1_8R3</version>
 			<scope>system</scope>
-			<systemPath>${user.home}\.m2\repository\org\bukkit\craftbukkit\1.8.8-R0.1-SNAPSHOT\craftbukkit-1.8.8-R0.1-SNAPSHOT.jar</systemPath>
+			<systemPath>${user.home}\.m2\repository\org\spigotmc\spigot\1.8.8-R0.1-SNAPSHOT\spigot-1.8.8-R0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
-			<artifactId>craftbukkit_v1_9R1</artifactId>
-			<groupId>org.bukkit</groupId>
+			<artifactId>spigot_v1_9R1</artifactId>
+			<groupId>org.spigotmc</groupId>
 			<version>v1_9R1</version>
 			<scope>system</scope>
-			<systemPath>${user.home}\.m2\repository\org\bukkit\craftbukkit\1.9.2-R0.1-SNAPSHOT\craftbukkit-1.9.2-R0.1-SNAPSHOT.jar</systemPath>
+			<systemPath>${user.home}\.m2\repository\org\spigotmc\spigot\1.9.2-R0.1-SNAPSHOT\spigot-1.9.2-R0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
-			<artifactId>craftbukkit_v1_9R2</artifactId>
-			<groupId>org.bukkit</groupId>
+			<artifactId>spigot_v1_9R2</artifactId>
+			<groupId>org.spigotmc</groupId>
 			<version>v1_9R2</version>
 			<scope>system</scope>
-			<systemPath>${user.home}\.m2\repository\org\bukkit\craftbukkit\1.9.4-R0.1-SNAPSHOT\craftbukkit-1.9.4-R0.1-SNAPSHOT.jar</systemPath>
+			<systemPath>${user.home}\.m2\repository\org\spigotmc\spigot\1.9.4-R0.1-SNAPSHOT\spigot-1.9.4-R0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
-			<artifactId>craftbukkit_v1_10R1</artifactId>
-			<groupId>org.bukkit</groupId>
+			<artifactId>spigot_v1_10R1</artifactId>
+			<groupId>org.spigotmc</groupId>
 			<version>v1_10R1</version>
 			<scope>system</scope>
-			<systemPath>${user.home}\.m2\repository\org\bukkit\craftbukkit\1.10.2-R0.1-SNAPSHOT\craftbukkit-1.10.2-R0.1-SNAPSHOT.jar</systemPath>
+			<systemPath>${user.home}\.m2\repository\org\spigotmc\spigot\1.10.2-R0.1-SNAPSHOT\spigot-1.10.2-R0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
-			<artifactId>craftbukkit_v1_11R1</artifactId>
-			<groupId>org.bukkit</groupId>
+			<artifactId>spigot_v1_11R1</artifactId>
+			<groupId>org.spigotmc</groupId>
 			<version>v1_8R3</version>
 			<scope>system</scope>
-			<systemPath>${user.home}\.m2\repository\org\bukkit\craftbukkit\1.11.2-R0.1-SNAPSHOT\craftbukkit-1.11.2-R0.1-SNAPSHOT.jar</systemPath>
+			<systemPath>${user.home}\.m2\repository\org\spigotmc\spigot\1.11.2-R0.1-SNAPSHOT\spigot-1.11.2-R0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
-			<artifactId>craftbukkit_v1_12R1</artifactId>
-			<groupId>org.bukkit</groupId>
+			<artifactId>spigot_v1_12R1</artifactId>
+			<groupId>org.spigotmc</groupId>
 			<version>v1_8R3</version>
 			<scope>system</scope>
-			<systemPath>${user.home}\.m2\repository\org\bukkit\craftbukkit\1.12-R0.1-SNAPSHOT\craftbukkit-1.12-R0.1-SNAPSHOT.jar</systemPath>
+			<systemPath>${user.home}\.m2\repository\org\spigotmc\spigot\1.12-R0.1-SNAPSHOT\spigot-1.12-R0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
     </dependencies>
 </project>
