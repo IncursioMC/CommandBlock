@@ -12,7 +12,7 @@
 	<artifactId>commandblockplugin</artifactId>
 
 	<build>
-		<finalName>commandblockserver-${project.version}</finalName>
+		<finalName>commandblockplugin-${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
