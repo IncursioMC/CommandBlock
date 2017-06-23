@@ -47,7 +47,7 @@
 					<artifactId>spigot</artifactId>
 				</exclusion>
 				<exclusion>
-					<artifactId>craftbukkit_v1_8R3</artifactId>
+					<artifactId>spigot_v1_8R3</artifactId>
 					<groupId>org.spigotmc</groupId>
 				</exclusion>
 				<exclusion>
