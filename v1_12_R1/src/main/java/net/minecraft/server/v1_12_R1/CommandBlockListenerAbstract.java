@@ -1,4 +1,4 @@
-package net.minecraft.server.v1_11_R1;
+package net.minecraft.server.v1_12_R1;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.SimpleCommandMap;
-import org.bukkit.craftbukkit.v1_11_R1.command.VanillaCommandWrapper;
+import org.bukkit.craftbukkit.v1_12_R1.command.VanillaCommandWrapper;
 
 import com.boydti.cbs.Main;
 import com.google.common.base.Joiner;
@@ -92,7 +92,7 @@ public abstract class CommandBlockListenerAbstract implements ICommandListener {
             this.d = new ChatComponentText("#itzlipofutzli"); // what?
             this.b = 1;
         } else {
-            MinecraftServer minecraftserver = B_();
+            MinecraftServer minecraftserver = C_();
             if ((minecraftserver != null) && (minecraftserver.M()) && (minecraftserver.getEnableCommandBlock())) {
                 minecraftserver.getCommandHandler();
                 try {
@@ -288,14 +288,14 @@ public abstract class CommandBlockListenerAbstract implements ICommandListener {
     
     @Override
     public boolean getSendCommandFeedback() {
-        MinecraftServer minecraftserver = B_();
+        MinecraftServer minecraftserver = C_();
     
         return (minecraftserver == null) || (!minecraftserver.M()) || (minecraftserver.worldServer[0].getGameRules().getBoolean("commandBlockOutput"));
     }
     
     @Override
     public void a(CommandObjectiveExecutor.EnumCommandResult commandobjectiveexecutor_enumcommandresult, int i) {
-        this.g.a(B_(), this, commandobjectiveexecutor_enumcommandresult, i);
+        this.g.a(C_(), this, commandobjectiveexecutor_enumcommandresult, i);
     }
     
     public abstract void i();

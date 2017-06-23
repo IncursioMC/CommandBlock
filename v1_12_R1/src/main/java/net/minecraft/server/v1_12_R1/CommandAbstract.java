@@ -1,4 +1,4 @@
-package net.minecraft.server.v1_11_R1;
+package net.minecraft.server.v1_12_R1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.bukkit.craftbukkit.v1_11_R1.command.CraftBlockCommandSender;
+import org.bukkit.craftbukkit.v1_12_R1.command.CraftBlockCommandSender;
 
 import com.boydti.cbs.CommandProcessor;
 import com.boydti.cbs.Main;
@@ -143,7 +143,7 @@ public abstract class CommandAbstract implements ICommand {
     
     protected static NBTTagCompound a(Entity paramEntity) {
         NBTTagCompound localNBTTagCompound = new NBTTagCompound();
-        paramEntity.e(localNBTTagCompound);
+        paramEntity.save(localNBTTagCompound);
         if ((paramEntity instanceof EntityHuman)) {
             ItemStack localItemStack = ((EntityHuman) paramEntity).inventory.getItemInHand();
             if ((localItemStack != null) && (localItemStack.getItem() != null)) {
@@ -590,7 +590,7 @@ public abstract class CommandAbstract implements ICommand {
             if (localArrayList.isEmpty()) {
                 for (localIterator = paramCollection.iterator(); localIterator.hasNext();) {
                     localObject = localIterator.next();
-                    if (((localObject instanceof MinecraftKey)) && (a(str, ((MinecraftKey) localObject).a()))) {
+                    if (((localObject instanceof MinecraftKey)) && (a(str, ((MinecraftKey) localObject).b()))) {
                         localArrayList.add(String.valueOf(localObject));
                     }
                 }

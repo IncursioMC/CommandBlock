@@ -1,9 +1,9 @@
-package net.minecraft.server.v1_11_R1;
+package net.minecraft.server.v1_12_R1;
 
 import java.io.IOException;
 
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.v1_11_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer;
 import org.bukkit.event.block.BlockBreakEvent;
 
 public class PacketPlayInCustomPayload implements Packet<PacketListenerPlayIn> {

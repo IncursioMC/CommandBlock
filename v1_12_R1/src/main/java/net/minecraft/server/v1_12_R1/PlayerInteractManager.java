@@ -1,6 +1,6 @@
-package net.minecraft.server.v1_11_R1;
+package net.minecraft.server.v1_12_R1;
 
-import org.bukkit.craftbukkit.v1_11_R1.event.CraftEventFactory;
+import org.bukkit.craftbukkit.v1_12_R1.event.CraftEventFactory;
 import org.bukkit.event.Event;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -126,7 +126,7 @@ public class PlayerInteractManager {
                     return;
                 }
                 
-                if (!this.player.dc()) {
+                if (!this.player.dk()) {
                     ItemStack itemstack = this.player.getItemInMainHand();
                     
                     if (itemstack == null) {
@@ -301,7 +301,7 @@ public class PlayerInteractManager {
                 return false;
             }
             
-            if (!this.player.dc()) {
+            if (!this.player.dk()) {
                 ItemStack itemstack = this.player.getItemInMainHand();
                 
                 if (itemstack == null) {
@@ -345,7 +345,7 @@ public class PlayerInteractManager {
     
     public EnumInteractionResult a(EntityHuman entityhuman, World world, ItemStack itemstack, EnumHand enumhand) {
         if (this.gamemode == EnumGamemode.SPECTATOR) return EnumInteractionResult.PASS;
-        if (entityhuman.di().a(itemstack.getItem())) {
+        if (entityhuman.getCooldownTracker().a(itemstack.getItem())) {
             return EnumInteractionResult.PASS;
         }
         int i = itemstack.getCount();
@@ -414,7 +414,7 @@ public class PlayerInteractManager {
                         ITileInventory itileinventory = (ITileInventory) tileentity;
                         
                         if (((itileinventory instanceof TileEntityChest)) && ((block instanceof BlockChest))) {
-                            itileinventory = ((BlockChest) block).c(world, blockposition);
+                            itileinventory = ((BlockChest) block).getInventory(world, blockposition);
                         }
                         
                         if (itileinventory != null) {
