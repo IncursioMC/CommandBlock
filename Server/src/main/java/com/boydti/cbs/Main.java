@@ -90,6 +90,30 @@ public class Main {
             
         }
     }
+	 public static void inject_1_11_R1() {
+        try {
+            net.minecraft.server.v1_11_R1.CommandAbstract.inject();
+            org.bukkit.craftbukkit.v1_11_R1.command.VanillaCommandWrapper.inject();
+            net.minecraft.server.v1_11_R1.CommandBlockListenerAbstract.inject();
+            net.minecraft.server.v1_11_R1.PlayerInteractManager.inject();
+            net.minecraft.server.v1_11_R1.PacketPlayOutEntityStatus.inject();
+            net.minecraft.server.v1_11_R1.PacketPlayInCustomPayload.inject();
+        } catch (Throwable e) {
+            
+        }
+    }
+	 public static void inject_1_12_R1() {
+        try {
+            net.minecraft.server.v1_12_R1.CommandAbstract.inject();
+            org.bukkit.craftbukkit.v1_12_R1.command.VanillaCommandWrapper.inject();
+            net.minecraft.server.v1_12_R1.CommandBlockListenerAbstract.inject();
+            net.minecraft.server.v1_12_R1.PlayerInteractManager.inject();
+            net.minecraft.server.v1_12_R1.PacketPlayOutEntityStatus.inject();
+            net.minecraft.server.v1_12_R1.PacketPlayInCustomPayload.inject();
+        } catch (Throwable e) {
+            
+        }
+    }
 
     public static void debug(final String m) {
         System.out.println(m);
